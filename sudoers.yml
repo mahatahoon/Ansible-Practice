@@ -1,0 +1,13 @@
+---
+- name: Make user a sudoer
+  hosts: all
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Add user to sudoers file
+      lineinfile:
+        dest: /etc/sudoers
+        line: 'maha ALL=(ALL) NOPASSWD: ALL'
+        validate: 'visudo -cf %s'
+
+

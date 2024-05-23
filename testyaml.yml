@@ -1,0 +1,7 @@
+---
+- name: Print hello 
+  hosts: backend
+  tasks:
+    - name: print hello maha
+      debug:
+        msg: "HELO MAHA" 

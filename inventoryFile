@@ -1,0 +1,5 @@
+[backend]
+Backend[1:2]
+
+[loadBalancer]
+nginxTest
